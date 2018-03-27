@@ -8,7 +8,8 @@ public static void main(String[] args) {
         System.out.println("Input: ");
         int n = show.nextInt();
         long fib[] = new long[n];
-         
+        long x =0;
+        
         fib[0] = 1;
         fib[1] = 1;
          
@@ -17,7 +18,8 @@ public static void main(String[] args) {
         }
         System.out.println("Output: "); 
         for (int i = 0; i < n; i++) {
-            System.out.print(fib[i] +  " ");
+            x = x + fib[i];
         }
+        System.out.print(x +  " ");
     }
 }
